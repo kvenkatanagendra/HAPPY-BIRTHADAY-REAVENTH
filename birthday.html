@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAPPY BIRTHDAY REVEANTH</title>
+    
+    <style>
+     
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2em;
+       
+            padding: 0;
+            
+        }
+        .image-container{
+          
+            margin-top: 20px;
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            display: none;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1{
+            color: aqua;
+            
+        }
+
+       h2{
+            color: deeppink;
+        }
+       h3{
+            color:gold;
+           
+        }
+       
+    </style>
+</head>
+<body>
+
+    
+   
+   
+
+    
+
+
+
+    <center><h1><i>HAPPY BIRTHDAY </i></h1>
+    <h2><i>REVEANTH</i></h2>
+    <h3><i>bayya</i></h3>
+
+
+    <div class="image-container" img-size="width:100px,height:100px">
+    <img src="IMG_20240214_085904.jpg">
+    <img src="IMG_20240214_090131.jpg">
+      <img src="IMG_20240214_091233.jpg"></div></center>
+
+    
+
+  
+
+    <script>
+       
+        
+        
+        // JavaScript to display images sequentially
+        document.addEventListener("DOMContentLoaded", function() {
+            var images = document.querySelectorAll('.image-container img');
+            var index = 0;
+            var interval = 2000; // Change interval time in milliseconds
+
+            function displayImage() {
+                images[index].style.display = 'none'; // Hide current image
+                index = (index + 1) % images.length; // Move to the next image
+                images[index].style.display = 'block'; // Show next image
+            }
+
+            // Initially display the first image
+            images[index].style.display = 'block';
+
+            // Set interval to display images sequentially
+            setInterval(displayImage, interval);
+        });
+  
+    </script>
+</body>
+</html>
